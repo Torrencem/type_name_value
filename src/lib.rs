@@ -41,7 +41,7 @@ impl<T, Name> Named<T, Name> {
 #[macro_export]
 macro_rules! name {
     ($val:expr) => {{
-        struct Uniquename {};
+        struct UniqueName {};
 
         unsafe {
             // Nothing else is named UniqueName because
