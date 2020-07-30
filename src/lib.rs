@@ -1,5 +1,6 @@
-//! Exposes the ``name!()`` macro, which can be used to assign unique types to values. This can be
-//! used to implement the "Ghosts of Departed Proofs" pattern.
+//! Exposes the ``name!()`` macro, which can be used to assign type names to values. This can be
+//! used to implement in part the "Ghosts of Departed Proofs" pattern. Be very careful using this
+//! crate, and see the README for some caveats.
 
 use std::marker::PhantomData;
 
@@ -19,10 +20,6 @@ pub struct Named<T, Name> {
 /// Create a named value. You probably don't want to use
 /// this, but instead want to use the name!() macro that
 /// calls this.
-///
-/// # Safety
-/// Must make sure Name is not used as the name for any
-/// other value of type Named<T, Name>
 pub unsafe fn name<Name, T>(val: T) -> Named<T, Name> {
     Named {
         inner: val,

@@ -1,9 +1,9 @@
 [package]
 name = "type_name_value"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Matthew Torrence <matt@torrencefamily.net>"]
 edition = "2018"
-description = "A package for assigning unique types to values"
+description = "A package for assigning type names to values"
 homepage = "https://github.com/Torrencem/type_name_value"
 documentation = "https://docs.rs/type_name_value"
 repository = "https://github.com/Torrencem/type_name_value"

@@ -1,7 +1,9 @@
 
 # type_name_value
 
-Assign a unique type to a value. This crate was made for a [demo of a cool concept](https://github.com/Torrencem/fixed_vec/blob/master/post.md), and I thought it would definitely be useful for other applications. See the original post for more information.
+Assign a unique type to a value. This crate was made for a [demo of a cool concept](https://github.com/Torrencem/fixed_vec/blob/master/post.md), and I thought it would definitely be useful for other applications. Unfortunately, the original application was unsound, but it might be useful for someone still.
+
+An important note if you plan to use this crate! The reason this was unsound for its original purpose is that it only attaches unique types to macro invocations, not actually to values, and so it can't quite guarantee what it needs to. Check the original repo for more information before using this crate!
 
 ## License
 
